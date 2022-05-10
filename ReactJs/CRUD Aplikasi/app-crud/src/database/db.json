@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "M Miftarif",
+      "username": "Miftarif0103",
+      "email": "miftarifmuhammad10@gmail.com",
+      "phone": "08778449",
+      "id": 1
+    },
+    {
+      "name": "Anello Store",
+      "username": "Anello04",
+      "email": "gurugadget010@gmail.com",
+      "phone": "85842929960",
+      "id": 2
+    },
+    {
+      "name": "Nurul Avida",
+      "username": "Nuna09",
+      "email": "Nurulavida010@gmail.com",
+      "phone": "0877282828",
+      "id": 3
+    }
+  ]
+}

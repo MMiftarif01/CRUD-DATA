@@ -1,0 +1,136 @@
+PlayOnLinux debugging tool (v4.3.4)
+-----------------------------------------------
+Debugging: Microsoft Office 2016
+
+Warning: This is a PlayOnLinux script logfile. It does not contain everything that happened in your program\'s virtual drive (wineprefix)
+Please do not use this logfile on winehq forum, this logfile is not interesting for wine debugging.
+
+Date: 03/29/22 09:56:51
+
+> uname -a
+  Linux mmiftarif0103-IdeaPad-3-14ALC6 5.13.0-37-generic #42~20.04.1-Ubuntu SMP Tue Mar 15 15:44:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+> lsb_release -a
+  
+> wine --version (Be careful; this version might not be the version used
+in the script. Read the content of this file for more information)
+  wine-5.0 (Ubuntu 5.0-3ubuntu1)
+> glxinfo \| grep rendering
+  direct rendering: Yes
+> glxinfo \| grep renderer
+      GLX_MESA_query_renderer, GLX_MESA_swap_control, GLX_NV_float_buffer, 
+    GLX_MESA_copy_sub_buffer, GLX_MESA_query_renderer, GLX_MESA_swap_control, 
+Extended renderer info (GLX_MESA_query_renderer):
+OpenGL renderer string: AMD RENOIR (DRM 3.41.0, 5.13.0-37-generic, LLVM 12.0.0)
+> OpenGL libs
+  check_dd_x86 missing, test skipped
+  check_dd_amd64 missing, test skipped
+> export
+  declare -x AMD64_COMPATIBLE="True"
+declare -x APPLICATION_TITLE="PlayOnLinux"
+declare -x DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+declare -x DEBIAN_PACKAGE="TRUE"
+declare -x DESKTOP="/home/mmiftarif0103/Desktop"
+declare -x DESKTOP_SESSION="ubuntu"
+declare -x DISPLAY=":0"
+declare -x DONT_MONITOR="1"
+declare -x DYLDPATH_ORIGIN=""
+declare -x DYLD_LIBRARY_PATH=""
+declare -x GDMSESSION="ubuntu"
+declare -x GECKO_SITE="http://wine.playonlinux.com/gecko"
+declare -x GIO_LAUNCHED_DESKTOP_FILE="/usr/share/applications/PlayOnLinux.desktop"
+declare -x GIO_LAUNCHED_DESKTOP_FILE_PID="50011"
+declare -x GJS_DEBUG_OUTPUT="stderr"
+declare -x GJS_DEBUG_TOPICS="JS ERROR;JS LOG"
+declare -x GNOME_DESKTOP_SESSION_ID="this-is-deprecated"
+declare -x GNOME_SHELL_SESSION_MODE="ubuntu"
+declare -x GNUPGHOME="/home/mmiftarif0103/.PlayOnLinux//gpg"
+declare -x GPG_AGENT_INFO="/run/user/1000/gnupg/S.gpg-agent:0:1"
+declare -x GTK_MODULES="gail:atk-bridge"
+declare -x G_FILENAME_ENCODING="UTF-8"
+declare -x HOME="/home/mmiftarif0103"
+declare -x IGNORE_ICON_DIR="false"
+declare -x IM_CONFIG_PHASE="1"
+declare -x INVOCATION_ID="0eef925bab56412c89d084e83c243baf"
+declare -x JOURNAL_STREAM="8:49955"
+declare -x LANG="en_US.UTF-8"
+declare -x LC_ADDRESS="id_ID.UTF-8"
+declare -x LC_IDENTIFICATION="id_ID.UTF-8"
+declare -x LC_MEASUREMENT="id_ID.UTF-8"
+declare -x LC_MONETARY="id_ID.UTF-8"
+declare -x LC_NAME="id_ID.UTF-8"
+declare -x LC_NUMERIC="id_ID.UTF-8"
+declare -x LC_PAPER="id_ID.UTF-8"
+declare -x LC_TELEPHONE="id_ID.UTF-8"
+declare -x LC_TIME="id_ID.UTF-8"
+declare -x LD_32_PATH_ORIGIN=""
+declare -x LD_LIBRARY_PATH=""
+declare -x LD_PATH_ORIGIN=""
+declare -x LOGNAME="mmiftarif0103"
+declare -x MACHTYPE="x86_64-pc-linux-gnu"
+declare -x MANAGERPID="1696"
+declare -x MD5_COMMAND="md5sum"
+declare -x MONO_SITE="http://wine.playonlinux.com/mono"
+declare -x OLDPWD="/home/mmiftarif0103/.PlayOnLinux/configurations/setups/Microsoft Office 2016"
+declare -x OS_NAME="linux"
+declare -x OpenGL32="1"
+declare -x OpenGL64="1"
+declare -x PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/wine"
+declare -x PATH_ORIGIN="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/wine"
+declare -x PLAYONLINUX="/usr/share/playonlinux"
+declare -x POL_ARCH="x86"
+declare -x POL_COOKIE="ZIUhgajrVWhdmlr3YKuc"
+declare -x POL_CURL="curl"
+declare -x POL_DNS="playonlinux.com"
+declare -x POL_HOST="127.0.0.1"
+declare -x POL_ID="95914056"
+declare -x POL_LANG="en"
+declare -x POL_OS="Linux"
+declare -x POL_PORT="30000"
+declare -x POL_PYTHON="python"
+declare -x POL_SetupWindow_ID="51546"
+declare -x POL_TERM="x-terminal-emulator"
+declare -x POL_UPTODATE="TRUE"
+declare -x POL_USER_ARCH="x86"
+declare -x POL_USER_ROOT="/home/mmiftarif0103/.PlayOnLinux/"
+declare -x POL_WGET="env LD_LIBRARY_PATH=\"\" wget --prefer-family=IPv4 -q"
+declare -x PWD="/usr/share/playonlinux/python"
+declare -x QT_ACCESSIBILITY="1"
+declare -x QT_IM_MODULE="ibus"
+declare -x REPERTOIRE="/home/mmiftarif0103/.PlayOnLinux/"
+declare -x SCRIPTID="Microsoft Office 2016"
+declare -x SED="sed"
+declare -x SESSION_MANAGER="local/mmiftarif0103-IdeaPad-3-14ALC6:@/tmp/.ICE-unix/1946,unix/mmiftarif0103-IdeaPad-3-14ALC6:/tmp/.ICE-unix/1946"
+declare -x SETUPWINDOW_INIT="true"
+declare -x SHELL="/bin/bash"
+declare -x SHLVL="3"
+declare -x SITE="http://repository.playonlinux.com"
+declare -x SSH_AGENT_PID="1885"
+declare -x SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"
+declare -x TEXTDOMAIN="pol"
+declare -x TITLE="Microsoft Office 2016"
+declare -x TITRE="PlayOnLinux"
+declare -x UBUNTU_MENUPROXY="0"
+declare -x USER="mmiftarif0103"
+declare -x USERNAME="mmiftarif0103"
+declare -x VERSION="4.3.4"
+declare -x WGETRC="/home/mmiftarif0103/.PlayOnLinux//configurations/wgetrc"
+declare -x WINDOWPATH="2"
+declare -x WINEDLLOVERRIDES="winemenubuilder.exe=d"
+declare -x WINEPREFIX="/home/mmiftarif0103/.PlayOnLinux//wineprefix/default"
+declare -x WINE_SITE="https://phoenicis.playonlinux.com/index.php/wine?os=linux"
+declare -x WorkingDirectory="/home/mmiftarif0103"
+declare -x XAUTHORITY="/run/user/1000/gdm/Xauthority"
+declare -x XDG_CONFIG_DIRS="/etc/xdg/xdg-ubuntu:/etc/xdg"
+declare -x XDG_CURRENT_DESKTOP="ubuntu:GNOME"
+declare -x XDG_DATA_DIRS="/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop"
+declare -x XDG_MENU_PREFIX="gnome-"
+declare -x XDG_RUNTIME_DIR="/run/user/1000"
+declare -x XDG_SESSION_CLASS="user"
+declare -x XDG_SESSION_DESKTOP="ubuntu"
+declare -x XDG_SESSION_TYPE="x11"
+declare -x XMODIFIERS="@im=ibus"
+
+
+03/29/22 09:56:53 - [main] Fatal: Please install winetricks before installing Microsoft Office 2016!
+03/29/22 09:56:54 - [POL_SetupWindow_Close] Message: Closing window for pid 51546
+03/29/22 09:56:55 - [POL_SetupWindow_question] Message: question answer: TRUE

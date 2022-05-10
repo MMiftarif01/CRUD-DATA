@@ -1,0 +1,17 @@
+[Data Source]
+DisplayName=Contacts
+Enabled=false
+Parent=0d9d215af8325eb1ab5d4e42e37b3f925a32a828
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=miftarifmuhammad1@gmail.com
+CredentialName=
+IsExternal=false
+
+[Address Book]
+BackendName=google
